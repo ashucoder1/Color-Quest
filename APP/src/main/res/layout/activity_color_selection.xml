@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_bg"
+    tools:context=".ColorSelectionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/screen1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35pt"
+                android:id="@+id/redtick"
+                android:layout_height="35pt"
+                android:visibility="invisible"
+                android:src="@drawable/tick" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/red"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="65dp"
+                android:background="#FF0000"
+                android:text="RED" />
+
+            />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#03A9F4"
+                android:text="BLUE" />
+
+            <ImageView
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:visibility="invisible"
+                android:id="@+id/bluetick"
+                android:src="@drawable/tick" />
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/greentick"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/green"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="65dp"
+                android:background="#63DE68"
+                android:text="GREEN" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/yellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#FFEB3B"
+                android:text="YELLOW" />
+
+            <ImageView
+                android:id="@+id/yellowtick"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/magentatick"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/magenta"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="65dp"
+                android:background="#FF00FF"
+                android:text="MAGENTA" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cyan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFF"
+                android:text="CYAN" />
+
+            <ImageView
+                android:id="@+id/cyantick"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/blacktick"
+                android:layout_width="35pt"
+                android:layout_height="35pt"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/tick"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:background="#000000"
+                android:text="BLACK"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:text="Reset" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:id="@+id/viewresult"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40sp"
+            android:layout_marginBottom="7sp"
+            android:text="Submit"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:id="@+id/screen2">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_viewlost"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="lost.json"
+            app:lottie_loop="true" />
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="30sp" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/resultstatement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yay! you guessed Correctly"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible"
+        android:id="@+id/view3"
+        android:gravity="center">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_marginBottom="86dp"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="congo.json"
+            app:lottie_loop="true"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
