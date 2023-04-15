@@ -139,7 +139,7 @@ class ColorSelectionActivity : AppCompatActivity() {
                 animationViewlost.visibility = View.VISIBLE
 
                 var ans1: TextView = findViewById(R.id.q)
-                ans1.text = "The Order of Your Selecion is wrong"
+                ans1.text = "The Order of Your Selecion is wrong."
             }
 
 
