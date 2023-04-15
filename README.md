@@ -2,7 +2,7 @@
 
 
 ##Note-
-*The output apk is present in google drive of the apk folder,simply install it.\n
+*The output apk is present in google drive just go to link below and open APK folder,simply install it.
 Drive link- https://drive.google.com/drive/folders/1nNcQOE1KstiKyiZUm3ecvQ_LLM6pxKPk?usp=sharing
 *Tested on Poco M3 Pro 5g.\n
 *API v33 required for ui .\n
