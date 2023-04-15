@@ -28,11 +28,12 @@
 
             <EditText
                 android:layout_width="wrap_content"
-                android:textColor="@color/black"
+                android:textColor="#DD000000"
                 android:id="@+id/personName"
-                android:hint="Your Name"
+                android:hint="   Your Name   "
                 android:layout_height="wrap_content"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                />
 
 
 
@@ -42,7 +43,11 @@
             android:layout_marginTop="30pt"
             android:layout_height="wrap_content"
             android:text="Let's Go!"
-            android:textAlignment="center"/>
+            android:textAlignment="center"
+            android:elevation="5dp"
+            app:strokeColor="#BCD92C2C"
+            app:strokeWidth="2dp"
+            android:backgroundTint="#80C65B21"/>
 
 
     </LinearLayout>

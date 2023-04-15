@@ -18,29 +18,9 @@ class gamescreen : AppCompatActivity() {
         Color.RED, Color.GREEN, Color.BLUE, Color.YELLOW,
         Color.MAGENTA, Color.CYAN, Color.BLACK
     )
-    //colors.shuffle()
 
-    val colorNames = colors.map {
-        when (it) {
-            Color.RED -> "RED"
-            Color.GREEN -> "GREEN"
-            Color.BLUE -> "BLUE"
-            Color.YELLOW -> "YELLOW"
-            Color.MAGENTA -> "MAGENTA"
-            Color.CYAN -> "CYAN"
-            Color.BLACK -> "BLACK"
-            else -> throw IllegalArgumentException("Invalid color value: $it")
-        }
-    }.map { it.toUpperCase() }.toMutableList()
 
-    val finalColorNames=colorNames.toTypedArray()
-    var c1=finalColorNames[0]
-    var c2=finalColorNames[1]
-    var c3=finalColorNames[2]
-    var c4=finalColorNames[3]
-    var c5=finalColorNames[4]
-    var c6=finalColorNames[5]
-    var c7=finalColorNames[6]
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,6 +38,30 @@ class gamescreen : AppCompatActivity() {
         val start: Button = findViewById(R.id.startgame)
         val show:Button= findViewById(R.id.show)
         welcomeName.text= welcomeName.text
+
+        colors.shuffle()
+
+        val colorNames = colors.map {
+            when (it) {
+                Color.RED -> "RED"
+                Color.GREEN -> "GREEN"
+                Color.BLUE -> "BLUE"
+                Color.YELLOW -> "YELLOW"
+                Color.MAGENTA -> "MAGENTA"
+                Color.CYAN -> "CYAN"
+                Color.BLACK -> "BLACK"
+                else -> throw IllegalArgumentException("Invalid color value: $it")
+            }
+        }.map { it.toUpperCase() }.toMutableList()
+
+        val finalColorNames=colorNames.toTypedArray()
+        var c1=finalColorNames[0]
+        var c2=finalColorNames[1]
+        var c3=finalColorNames[2]
+        var c4=finalColorNames[3]
+        var c5=finalColorNames[4]
+        var c6=finalColorNames[5]
+        var c7=finalColorNames[6]
 
 
         show.setOnClickListener {

@@ -13,7 +13,7 @@
         android:gravity="center"
         android:orientation="vertical"
         android:id="@+id/screen1"
-        android:visibility="visible"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -160,15 +160,20 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/reset"
             android:layout_width="wrap_content"
+            android:background="#A7F1EBF1"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
             android:text="Reset" />
 
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:id="@+id/viewresult"
+            app:strokeWidth="2dp"
+            android:backgroundTint="#80C65B21"
+            app:strokeColor="#BCD92C2C"
+            android:elevation="5dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="40sp"
             android:layout_marginBottom="7sp"
@@ -180,7 +185,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:visibility="invisible"
+        android:visibility="visible"
         android:layout_marginBottom="5dp"
         android:orientation="vertical"
         android:id="@+id/screen2">
@@ -196,20 +201,26 @@
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/name"
+            android:fontFamily="cursive"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Name"
-            android:textSize="30sp" />
+            android:textSize="35sp" />
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/resultstatement"
             android:layout_width="wrap_content"
+            android:fontFamily="cursive"
             android:layout_height="wrap_content"
             android:text="Yay! you guessed Correctly"
-            android:textSize="30sp" />
+            android:textSize="35sp" />
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/q"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:text="deceleration"
+            android:layout_marginTop="15dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
 
@@ -217,7 +228,6 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerview"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content" />
 
 
