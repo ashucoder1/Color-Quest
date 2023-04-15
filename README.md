@@ -1,5 +1,5 @@
 Color-Quest
-##Note- *The output apk is present in google drive just go to link below and open APK folder,simply install it. Drive link- https://drive.google.com/drive/folders/1nNcQOE1KstiKyiZUm3ecvQ_LLM6pxKPk?usp=sharing *Tested on Poco M3 Pro 5g.\n *API v33 required for ui .\n *(Maybe Android 12 req).\n
+##Note- *The output apk is present in google drive just go to link below and open APK folder,simply install it. Drive link- https://drive.google.com/drive/folders/1Eux77AxG9X_R8FMA-OVuHefCU7kIbc4E?usp=sharing  *Tested on Poco M3 Pro 5g.\n *API v33 required for ui .\n *(Maybe Android 12 req).\n
 
 #A basic color guessing game . Color quest is an Android app where the user is presented with a randomly generated colors, The game is easy to play and can be enjoyed by users of all ages.
 
